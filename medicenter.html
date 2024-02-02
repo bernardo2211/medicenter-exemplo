@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
     <link rel="stylesheet" href="css/template.css">
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menumobile").addEventListener("click",function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none' ;                      
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }    
+                });
+        };
+    </script>
+
+
     <title>Medicenter</title>
 </head>
 <body>
@@ -14,6 +27,13 @@
             </div>
             <div class="menu">
                 <nav>
+                    <!--alteraçao para mobile-->
+                    <div class="menumobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <!--FIM Mobile-->
                     <ul>
                         <li class="active"><a href="">home</a></li>
                         <li><a href="">home</a></li>
@@ -66,8 +86,90 @@
                         <div class="widget_title_text">Latest News</div>
                         <div class="widget_title_bar"></div>
                     </div>
-                    <div class="widget_body">
-                        ....
+                    <div class="widget_body flex">
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="images/medico.jpg" >
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amet velum
+                                </div>
+                                <div class="news_resume">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nesciunt obcaecati iusto dolor optio saepe. Neque expedita
+                                    facilis, quod exercitationem voluptates voluptas. Quaerat voluptatem debitis
+                                    saepe eveniet praesentium perferendis atque rerum!
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="images/medico.jpg" >
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amet velum
+                                </div>
+                                <div class="news_resume">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nesciunt obcaecati iusto dolor optio saepe. Neque expedita
+                                    facilis, quod exercitationem voluptates voluptas. Quaerat voluptatem debitis
+                                    saepe eveniet praesentium perferendis atque rerum!
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="images/medico.jpg" >
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amet velum
+                                </div>
+                                <div class="news_resume">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nesciunt obcaecati iusto dolor optio saepe. Neque expedita
+                                    facilis, quod exercitationem voluptates voluptas. Quaerat voluptatem debitis
+                                    saepe eveniet praesentium perferendis atque rerum!
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 12</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="images/medico.jpg" >
+                                </div>
+                                <div class="news_title">
+                                    Lorem ipsum dolor sit amet velum
+                                </div>
+                                <div class="news_resume">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nesciunt obcaecati iusto dolor optio saepe. Neque expedita
+                                    facilis, quod exercitationem voluptates voluptas. Quaerat voluptatem debitis
+                                    saepe eveniet praesentium perferendis atque rerum!
+                                </div>
+                            </a>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -93,7 +195,7 @@
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati recusandae ducimus ut. </div>
+                        <div class="make_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati recusandae ducimus ut. </div>
                         <p class="p1">by phone: <strong> 1-800-643-4300</strong> </p>
                         <p class="p2">by e-mail: <a href="">medicenter@gmail.com</a> </p>
                         <p class="p3">or fill in the form on cut contage page</p>
@@ -103,8 +205,80 @@
         </div>
     </section>
 
+    <footer>
+      <div class="container flexcolumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                   <a href="">
+                    Healh Insurance
+                    <p class="sub">Here in medicenter we have individual -></p>
+                   </a> 
+                </div>
+                <div class="fm_2">
+                    <a href="">
+                        Medical Records
+                        <p class="sub">Here in medicenter we have individual -></p>
+                       </a> 
+                </div>
+                <div class="fm_3">
+                    <a href="">
+                        Online Bill Pay
+                        <p class="sub">Here in medicenter we have individual -></p>
+                       </a> 
+                </div>
+            </div>
+
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter clinic </div>
+                            <div class="widget_title_bar"></div>
+                            <div class="footer_text_cinza clinic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div class="table">medicenter Clinic</div>
+                            <div class="table">35 Fatima street <div class="contact">+ 123 655 856</div></div>
+                            <div class="table">Kelor East<div class="contact">+ 123 755 756</div></div>
+                            <div class="table">VIC 3033, Australia<div class="contact email">medicenter@gmail.com</div> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Posts </div>
+                            <div class="widget_title_bar"></div>
+                            <div class="footer_text">-> Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</div>
+                            <div class="footer_data">6 years ago</div>
+                            <div class="footer_text">-> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                            <div class="footer_data">6 years ago</div>
+                            <div class="footer_text">-> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                            <div class="footer_data">6 years ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Tweets </div>
+                            <div class="widget_title_bar"></div>
+                            <div class="footer_text_cinza">-> " Libero, porro. In, quasi quidem consequuntur maxime dolore tempora quibusdam. Eos ullam earum molestias consequuntur incidunt odio atque, numquam id fugit fugiat. "<br>#bigword #salveomundo #pracachorro <br>@Bruno_garido</div>
+                            <div class="footer_data">2 days ago</div>
+                            <div class="footer_text_cinza">-> "Lorem ipsum dolor sit amet, consectetur adipisicing elit. !"<br>@Wiliam_Joseph</div>
+                            <div class="footer_data">4 days ago</div>
+                            <div class="footer_text_cinza">-> " Excepturi saepe odio sint ducimus voluptates reiciendis atque culpa earum perferendis voluptas, sed, officiis iure cum! <br>#Mecina #Azulmarinho #salveomundo"<br>@Carlos_Lampedine</div>
+                            <div class="footer_data">5 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+
+            <div class="footer_copy ">
+                Copyright - todos os direitos reservados a: Mim mesmo
+            </div>
+        </div>
 
 
+    </footer>
 
 
 </body>
